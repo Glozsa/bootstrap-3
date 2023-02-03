@@ -1,0 +1,84 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    font-family: 'Kumbh Sans', sans-serif;
+    font-size: 18px;
+}
+
+#body {
+    display: grid;
+    align-items: center;
+    min-height: 100vh;
+    background-color: hsl(185, 75%, 39%);
+    overflow: hidden;
+    transition: all 0.3s ease-in-out;
+}
+
+#topimg {
+    position:absolute;
+    translate: -200px -500px;
+    z-index: -1;
+}
+
+#bottomimg {
+    position:absolute;
+    translate: 750px 400px;
+    z-index: -1;
+}
+
+#card {
+    max-width: 350px;
+    background-color: aliceblue;
+    border-radius: 20px;
+}
+
+#topbg {
+    padding: 0;
+}
+
+#profilepic {
+    position: absolute;
+    translate: -50% -50%;
+    border-radius: 100%;
+    border: solid aliceblue 5px;
+}
+
+#piccont {
+    text-align: center;
+}
+
+#profileinfo {
+    text-align: center;
+    padding: 75px 0 0 0;
+}
+
+#profilelocation {
+    text-align: center;
+    padding: 10px 0;
+}
+
+#hr {
+    padding: 0;
+}
+
+#profilebanner {
+    border-radius: 20px 20px 0 0;
+}
+
+.grey {
+    color: hsl(227, 10%, 46%);
+}
+
+.darkblue {
+    color: hsl(229, 23%, 23%);
+}
+
+.fs-sm {
+    font-size: smaller;
+}
+
+@media (max-width: 350px) {
+    #body {
+        scale: 0.75;
+    }
+}
